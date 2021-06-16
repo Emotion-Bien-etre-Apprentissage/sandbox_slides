@@ -1,4 +1,9 @@
 # sandbox_slides
-Consacré aux tests de mise en place d'un workflow adéquat pour générer les PPTX
+Consacré aux tests de mise en place d'un template de slides.
 
-Salut les gens.
+Expérimentations avec :
+- Xaringan
+- Xaringanthemer
+- XaringanExtra
+
+Apprentissage par essai-erreur grâce au partage de la communauté #Rstats #Rladies.
