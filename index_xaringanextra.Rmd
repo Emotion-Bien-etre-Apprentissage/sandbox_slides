@@ -10,7 +10,7 @@ url_unsplash: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixid
 url_website: "https://competences-emotionnelles.ch"
 url_twitter: "https://twitter.com/NBressoud/"
 url_github: "https://github.com/Emotion-Bien-etre-Apprentissage/"
-url_slides: "https://emotion-bien-etre-apprentissage.github.io/sandbox_slides/"
+url_slides: "https://emotion-bien-etre-apprentissage.github.io/sandbox_slides/index_xaringanextra.html"
 url_source: "https://github.com/Emotion-Bien-etre-Apprentissage/sandbox_slides"
 twitter_card: "https://raw.githubusercontent.com/Emotion-Bien-etre-Apprentissage/sandbox_slides/main/share_card.png"
 background_position: "1050px 20px"
