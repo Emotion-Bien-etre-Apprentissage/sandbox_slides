@@ -12,7 +12,7 @@ url_twitter: "https://twitter.com/bresnico"
 url_github: "https://github.com/Emotion-Bien-etre-Apprentissage/"
 url_slides: "https://emotion-bien-etre-apprentissage.github.io/sandbox_slides/"
 url_source: "https://github.com/Emotion-Bien-etre-Apprentissage/sandbox_slides"
-twitter_card: "https://raw.githubusercontent.com/mpaulacaldas/r-ladies-workflow/gh-pages/share-card.png"
+twitter_card: "https://raw.githubusercontent.com/Emotion-Bien-etre-Apprentissage/sandbox_slides/main/share_card.png"
 background_position: "1050px 20px"
 background_size: "100px"
 output:
@@ -35,12 +35,12 @@ editor_options:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.retina = 3, eval = FALSE)
 library(xaringanExtra)
-#xaringanExtra::use_panelset()    # panels
-#xaringanExtra::use_share_again() # adds share bar at the bottom
-#xaringanExtra::use_clipboard()   # copy code from chunks to clipboard
-#xaringanExtra::style_share_again(
-#  share_buttons = c("twitter", "linkedin")
-#  )
+xaringanExtra::use_panelset()    # panels
+xaringanExtra::use_share_again() # adds share bar at the bottom
+xaringanExtra::use_clipboard()   # copy code from chunks to clipboard
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin")
+  )
 xaringanExtra::embed_xaringan(
   url = rmarkdown::metadata$url_slides, 
   ratio = "16:9"
