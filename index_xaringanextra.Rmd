@@ -1,29 +1,25 @@
-<!-- Basé sur les travaux de María Paula Caldas
-@mapaulacaldas à des fins de formation personnelle
--->
-
 ---
 title: "Bac à sable pour présentations avancées"
 subtitle: "&#x1F604; xaringan +<br/>&#x1F609; xaringanthemer"  
 author: 
   - "Philippe Gay"
   - "Nicolas Bressoud"
-date: '`r format(Sys.Date(), "%d.%m.%Y" )`'
-photo_creds: "[Didssph](https://unsplash.com/photos/Q9E4de1OxFk)" 
-url_unsplash: "https://images.unsplash.com/photo-1613117943693-9864648f7cb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
-url_website: "https://nicolasbressoud.ch"
+date: "12 juin 2021"
+photo_creds: "[Samuel Ferrara](https://unsplash.com/photos/1527pjeb6jg)" 
+url_unsplash: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+url_website: "https://competences-emotionnelles.ch"
 url_twitter: "https://twitter.com/bresnico"
-url_github: "https://github.com/bresnico"
-url_slides: "https://bresnico.github.io/learn"
-url_source: "https://github.com/bresnico/learn"
+url_github: "https://github.com/Emotion-Bien-etre-Apprentissage/"
+url_slides: "https://emotion-bien-etre-apprentissage.github.io/sandbox_slides/"
+url_source: "https://github.com/Emotion-Bien-etre-Apprentissage/sandbox_slides"
 twitter_card: "https://raw.githubusercontent.com/mpaulacaldas/r-ladies-workflow/gh-pages/share-card.png"
 background_position: "1050px 20px"
 background_size: "100px"
 output:
   xaringan::moon_reader:
-    css: ["default", "rladies", "rladies-fonts", "mpc.css"]
+    css: ["default", "mpc.css", "xaringan-themer.css"]
     lib_dir: libs
-    seal: false # to customise the title slide
+    seal: false
     nature:
       highlightStyle: github
       highlightLines: true
@@ -39,18 +35,19 @@ editor_options:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.retina = 3, eval = FALSE)
 library(xaringanExtra)
-xaringanExtra::use_panelset()    # panels
-xaringanExtra::use_share_again() # adds share bar at the bottom
-xaringanExtra::use_clipboard()   # copy code from chunks to clipboard
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter", "linkedin")
-  )
+#xaringanExtra::use_panelset()    # panels
+#xaringanExtra::use_share_again() # adds share bar at the bottom
+#xaringanExtra::use_clipboard()   # copy code from chunks to clipboard
+#xaringanExtra::style_share_again(
+#  share_buttons = c("twitter", "linkedin")
+#  )
 xaringanExtra::embed_xaringan(
   url = rmarkdown::metadata$url_slides, 
   ratio = "16:9"
   )
 emoji <- function(x) paste0(emo::ji(x), "&nbsp;")
 ```
+
 
 ```{r metathis, echo=FALSE, eval = TRUE}
 library(metathis)
@@ -76,6 +73,19 @@ meta() %>%
   )
 ```
 
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#D2202B",
+  secondary_color = "#c0c1c2",
+  inverse_header_color = "#FFFFFF",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+  )
+```
+
 class: title-slide, inverse, bottom
 background-image: url(`r rmarkdown::metadata$url_unsplash`)
 background-size: cover
@@ -89,14 +99,14 @@ background-size: cover
 ### `r rmarkdown::metadata$date`
 
 .right[
-Photo by `r rmarkdown::metadata$photo_creds`
+Photo par `r rmarkdown::metadata$photo_creds`
 ]
 
 ---
 class: about-me, right, bottom
 
 
-<img style="border-radius: 50%;" src="https://github.com/bresnico.png" width="150px"/>
+<img style="border-radius: 50%;" src="https://github.com/Emotion-Bien-etre-Apprentissage.png" width="150px"/>
 
 ## `r rmarkdown::metadata$author`
 
@@ -112,7 +122,6 @@ class: left, middle
 ### Slides: <`r rmarkdown::metadata$url_slides`>
 ### Github repo: <`r rmarkdown::metadata$url_source`>
 
-]
 
 ---
 
